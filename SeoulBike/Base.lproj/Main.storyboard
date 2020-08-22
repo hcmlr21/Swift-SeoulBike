@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K42-tM-QFb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeoulBike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vtU-8h-A24">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="d6Y-c6-nBb">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d6Y-c6-nBb" id="gn3-Cy-8NZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eXq-uX-vvr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="W71-ta-2n2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vtU-8h-A24" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="P06-OL-WBL"/>
+                            <constraint firstItem="vtU-8h-A24" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" id="Q78-2a-69r"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="vtU-8h-A24" secondAttribute="bottom" id="vFQ-r0-GNh"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="vtU-8h-A24" secondAttribute="trailing" id="vHB-zz-Z0y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="102"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="5S3-Wh-hk9">
+            <objects>
+                <viewController id="K42-tM-QFb" customClass="MapViewController" customModule="SeoulBike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mtA-oY-3zE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5h-B0-3WM" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="788"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qel-IF-dd8" firstAttribute="bottom" secondItem="F5h-B0-3WM" secondAttribute="bottom" constant="30" id="2zy-Hh-p8w"/>
+                            <constraint firstItem="F5h-B0-3WM" firstAttribute="top" secondItem="Qel-IF-dd8" secondAttribute="top" id="GmR-vD-OGe"/>
+                            <constraint firstItem="Qel-IF-dd8" firstAttribute="trailing" secondItem="F5h-B0-3WM" secondAttribute="trailing" id="btK-7a-aht"/>
+                            <constraint firstItem="F5h-B0-3WM" firstAttribute="leading" secondItem="Qel-IF-dd8" secondAttribute="leading" id="tQI-oc-lSK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qel-IF-dd8"/>
+                    </view>
+                    <connections>
+                        <outlet property="naverMapView" destination="F5h-B0-3WM" id="3S8-kP-ONk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTX-nt-8VL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.97101449275374" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>

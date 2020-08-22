@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		243A4D5E677B7BC6E9F82E3E /* Pods_SeoulBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBA840CCC0DC5D07D848D1C /* Pods_SeoulBike.framework */; };
+		48B5139424EF4F66000950AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5139324EF4F66000950AD /* AppDelegate.swift */; };
+		48B5139624EF4F66000950AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5139524EF4F66000950AD /* SceneDelegate.swift */; };
+		48B5139824EF4F66000950AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5139724EF4F66000950AD /* ViewController.swift */; };
+		48B5139B24EF4F66000950AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B5139924EF4F66000950AD /* Main.storyboard */; };
+		48B5139D24EF4F67000950AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B5139C24EF4F67000950AD /* Assets.xcassets */; };
+		48B513A024EF4F67000950AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B5139E24EF4F67000950AD /* LaunchScreen.storyboard */; };
+		48B513A524EF4F67000950AD /* SeoulBike WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 48B513A424EF4F67000950AD /* SeoulBike WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48B513AB24EF4F67000950AD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B513A924EF4F67000950AD /* Interface.storyboard */; };
+		48B513AD24EF4F68000950AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B513AC24EF4F68000950AD /* Assets.xcassets */; };
+		48B513B424EF4F68000950AD /* SeoulBike WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48B513B324EF4F68000950AD /* SeoulBike WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48B513B924EF4F68000950AD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B513B824EF4F68000950AD /* InterfaceController.swift */; };
+		48B513BB24EF4F68000950AD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B513BA24EF4F68000950AD /* ExtensionDelegate.swift */; };
+		48B513BD24EF4F68000950AD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B513BC24EF4F68000950AD /* NotificationController.swift */; };
+		48B513BF24EF4F68000950AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B513BE24EF4F68000950AD /* Assets.xcassets */; };
+		48B513D024EF4FD3000950AD /* BikeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B513CF24EF4FD3000950AD /* BikeDataModel.swift */; };
+		48B513D524EFB8D8000950AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B513D424EFB8D8000950AD /* MapViewController.swift */; };
+		5D8847C2D523FFC78E968043 /* Pods_SeoulBike_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B16E0AC48022CEBA3DFD6F2 /* Pods_SeoulBike_WatchKit_Extension.framework */; };
+		E3B0B45649191B24900FBC41 /* Pods_SeoulBike_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E17213352E38EBB0671D9E3 /* Pods_SeoulBike_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48B513A624EF4F67000950AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B5138824EF4F66000950AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48B513A324EF4F67000950AD;
+			remoteInfo = "SeoulBike WatchKit App";
+		};
+		48B513B524EF4F68000950AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B5138824EF4F66000950AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48B513B224EF4F68000950AD;
+			remoteInfo = "SeoulBike WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48B513C724EF4F69000950AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				48B513B424EF4F68000950AD /* SeoulBike WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B513CB24EF4F69000950AD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				48B513A524EF4F67000950AD /* SeoulBike WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C05AACE03C0127DF63C75D2 /* Pods-SeoulBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulBike.release.xcconfig"; path = "Target Support Files/Pods-SeoulBike/Pods-SeoulBike.release.xcconfig"; sourceTree = "<group>"; };
+		0E17213352E38EBB0671D9E3 /* Pods_SeoulBike_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulBike_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB06954D6BC04DCC87A228A /* Pods-SeoulBike WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulBike WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SeoulBike WatchKit Extension/Pods-SeoulBike WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		43CFFFE81E355DF5BCDF668E /* Pods-SeoulBike WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulBike WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SeoulBike WatchKit Extension/Pods-SeoulBike WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		48B5139024EF4F66000950AD /* SeoulBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B5139324EF4F66000950AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48B5139524EF4F66000950AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		48B5139724EF4F66000950AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48B5139A24EF4F66000950AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48B5139C24EF4F67000950AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48B5139F24EF4F67000950AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48B513A124EF4F67000950AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B513A424EF4F67000950AD /* SeoulBike WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeoulBike WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B513AA24EF4F67000950AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		48B513AC24EF4F68000950AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48B513AE24EF4F68000950AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B513B324EF4F68000950AD /* SeoulBike WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SeoulBike WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B513B824EF4F68000950AD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		48B513BA24EF4F68000950AD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		48B513BC24EF4F68000950AD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		48B513BE24EF4F68000950AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48B513C024EF4F68000950AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B513C124EF4F69000950AD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		48B513CF24EF4FD3000950AD /* BikeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeDataModel.swift; sourceTree = "<group>"; };
+		48B513D424EFB8D8000950AD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4B16E0AC48022CEBA3DFD6F2 /* Pods_SeoulBike_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulBike_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A16B9F51072114006FE549 /* Pods-SeoulBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulBike.debug.xcconfig"; path = "Target Support Files/Pods-SeoulBike/Pods-SeoulBike.debug.xcconfig"; sourceTree = "<group>"; };
+		9C4FA6272D0259BED8FA9086 /* Pods-SeoulBike WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulBike WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SeoulBike WatchKit App/Pods-SeoulBike WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		CFBA840CCC0DC5D07D848D1C /* Pods_SeoulBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE3A10705651CE294E93280 /* Pods-SeoulBike WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulBike WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SeoulBike WatchKit App/Pods-SeoulBike WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48B5138D24EF4F66000950AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243A4D5E677B7BC6E9F82E3E /* Pods_SeoulBike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B513B024EF4F68000950AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8847C2D523FFC78E968043 /* Pods_SeoulBike_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC93379CEBFF729CF09BBCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B0B45649191B24900FBC41 /* Pods_SeoulBike_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48B5138724EF4F66000950AD = {
+			isa = PBXGroup;
+			children = (
+				48B5139224EF4F66000950AD /* SeoulBike */,
+				48B513A824EF4F67000950AD /* SeoulBike WatchKit App */,
+				48B513B724EF4F68000950AD /* SeoulBike WatchKit Extension */,
+				48B5139124EF4F66000950AD /* Products */,
+				8C3314A8B95DC39062764A4A /* Pods */,
+				C08F23D693BE7A0EA157E20B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48B5139124EF4F66000950AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48B5139024EF4F66000950AD /* SeoulBike.app */,
+				48B513A424EF4F67000950AD /* SeoulBike WatchKit App.app */,
+				48B513B324EF4F68000950AD /* SeoulBike WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48B5139224EF4F66000950AD /* SeoulBike */ = {
+			isa = PBXGroup;
+			children = (
+				48B513D324EF63D1000950AD /* Model */,
+				48B5139324EF4F66000950AD /* AppDelegate.swift */,
+				48B5139524EF4F66000950AD /* SceneDelegate.swift */,
+				48B5139724EF4F66000950AD /* ViewController.swift */,
+				48B513D424EFB8D8000950AD /* MapViewController.swift */,
+				48B5139924EF4F66000950AD /* Main.storyboard */,
+				48B5139C24EF4F67000950AD /* Assets.xcassets */,
+				48B5139E24EF4F67000950AD /* LaunchScreen.storyboard */,
+				48B513A124EF4F67000950AD /* Info.plist */,
+			);
+			path = SeoulBike;
+			sourceTree = "<group>";
+		};
+		48B513A824EF4F67000950AD /* SeoulBike WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				48B513A924EF4F67000950AD /* Interface.storyboard */,
+				48B513AC24EF4F68000950AD /* Assets.xcassets */,
+				48B513AE24EF4F68000950AD /* Info.plist */,
+			);
+			path = "SeoulBike WatchKit App";
+			sourceTree = "<group>";
+		};
+		48B513B724EF4F68000950AD /* SeoulBike WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				48B513B824EF4F68000950AD /* InterfaceController.swift */,
+				48B513BA24EF4F68000950AD /* ExtensionDelegate.swift */,
+				48B513BC24EF4F68000950AD /* NotificationController.swift */,
+				48B513BE24EF4F68000950AD /* Assets.xcassets */,
+				48B513C024EF4F68000950AD /* Info.plist */,
+				48B513C124EF4F69000950AD /* PushNotificationPayload.apns */,
+			);
+			path = "SeoulBike WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		48B513D324EF63D1000950AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48B513CF24EF4FD3000950AD /* BikeDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C3314A8B95DC39062764A4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79A16B9F51072114006FE549 /* Pods-SeoulBike.debug.xcconfig */,
+				0C05AACE03C0127DF63C75D2 /* Pods-SeoulBike.release.xcconfig */,
+				9C4FA6272D0259BED8FA9086 /* Pods-SeoulBike WatchKit App.debug.xcconfig */,
+				FAE3A10705651CE294E93280 /* Pods-SeoulBike WatchKit App.release.xcconfig */,
+				3EB06954D6BC04DCC87A228A /* Pods-SeoulBike WatchKit Extension.debug.xcconfig */,
+				43CFFFE81E355DF5BCDF668E /* Pods-SeoulBike WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C08F23D693BE7A0EA157E20B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFBA840CCC0DC5D07D848D1C /* Pods_SeoulBike.framework */,
+				0E17213352E38EBB0671D9E3 /* Pods_SeoulBike_WatchKit_App.framework */,
+				4B16E0AC48022CEBA3DFD6F2 /* Pods_SeoulBike_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48B5138F24EF4F66000950AD /* SeoulBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B513CC24EF4F69000950AD /* Build configuration list for PBXNativeTarget "SeoulBike" */;
+			buildPhases = (
+				0ABC8B38F2CCDE7B59A7CA1D /* [CP] Check Pods Manifest.lock */,
+				48B5138C24EF4F66000950AD /* Sources */,
+				48B5138D24EF4F66000950AD /* Frameworks */,
+				48B5138E24EF4F66000950AD /* Resources */,
+				48B513CB24EF4F69000950AD /* Embed Watch Content */,
+				C735D6131E3C2170EAB37F06 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48B513A724EF4F67000950AD /* PBXTargetDependency */,
+			);
+			name = SeoulBike;
+			productName = SeoulBike;
+			productReference = 48B5139024EF4F66000950AD /* SeoulBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48B513A324EF4F67000950AD /* SeoulBike WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B513C824EF4F69000950AD /* Build configuration list for PBXNativeTarget "SeoulBike WatchKit App" */;
+			buildPhases = (
+				276AE7D45C770023F14C801A /* [CP] Check Pods Manifest.lock */,
+				48B513A224EF4F67000950AD /* Resources */,
+				48B513C724EF4F69000950AD /* Embed App Extensions */,
+				CDC93379CEBFF729CF09BBCF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48B513B624EF4F68000950AD /* PBXTargetDependency */,
+			);
+			name = "SeoulBike WatchKit App";
+			productName = "SeoulBike WatchKit App";
+			productReference = 48B513A424EF4F67000950AD /* SeoulBike WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		48B513B224EF4F68000950AD /* SeoulBike WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B513C424EF4F69000950AD /* Build configuration list for PBXNativeTarget "SeoulBike WatchKit Extension" */;
+			buildPhases = (
+				821B2C0DFEA049CC4DE77357 /* [CP] Check Pods Manifest.lock */,
+				48B513AF24EF4F68000950AD /* Sources */,
+				48B513B024EF4F68000950AD /* Frameworks */,
+				48B513B124EF4F68000950AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeoulBike WatchKit Extension";
+			productName = "SeoulBike WatchKit Extension";
+			productReference = 48B513B324EF4F68000950AD /* SeoulBike WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48B5138824EF4F66000950AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Jkookoo;
+				TargetAttributes = {
+					48B5138F24EF4F66000950AD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					48B513A324EF4F67000950AD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					48B513B224EF4F68000950AD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 48B5138B24EF4F66000950AD /* Build configuration list for PBXProject "SeoulBike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48B5138724EF4F66000950AD;
+			productRefGroup = 48B5139124EF4F66000950AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48B5138F24EF4F66000950AD /* SeoulBike */,
+				48B513A324EF4F67000950AD /* SeoulBike WatchKit App */,
+				48B513B224EF4F68000950AD /* SeoulBike WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48B5138E24EF4F66000950AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B513A024EF4F67000950AD /* LaunchScreen.storyboard in Resources */,
+				48B5139D24EF4F67000950AD /* Assets.xcassets in Resources */,
+				48B5139B24EF4F66000950AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B513A224EF4F67000950AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B513AD24EF4F68000950AD /* Assets.xcassets in Resources */,
+				48B513AB24EF4F67000950AD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B513B124EF4F68000950AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B513BF24EF4F68000950AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ABC8B38F2CCDE7B59A7CA1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulBike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		276AE7D45C770023F14C801A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulBike WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		821B2C0DFEA049CC4DE77357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulBike WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C735D6131E3C2170EAB37F06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulBike/Pods-SeoulBike-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulBike/Pods-SeoulBike-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulBike/Pods-SeoulBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48B5138C24EF4F66000950AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B513D024EF4FD3000950AD /* BikeDataModel.swift in Sources */,
+				48B5139824EF4F66000950AD /* ViewController.swift in Sources */,
+				48B5139424EF4F66000950AD /* AppDelegate.swift in Sources */,
+				48B513D524EFB8D8000950AD /* MapViewController.swift in Sources */,
+				48B5139624EF4F66000950AD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B513AF24EF4F68000950AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B513BD24EF4F68000950AD /* NotificationController.swift in Sources */,
+				48B513BB24EF4F68000950AD /* ExtensionDelegate.swift in Sources */,
+				48B513B924EF4F68000950AD /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48B513A724EF4F67000950AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48B513A324EF4F67000950AD /* SeoulBike WatchKit App */;
+			targetProxy = 48B513A624EF4F67000950AD /* PBXContainerItemProxy */;
+		};
+		48B513B624EF4F68000950AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48B513B224EF4F68000950AD /* SeoulBike WatchKit Extension */;
+			targetProxy = 48B513B524EF4F68000950AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48B5139924EF4F66000950AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B5139A24EF4F66000950AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48B5139E24EF4F67000950AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B5139F24EF4F67000950AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		48B513A924EF4F67000950AD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B513AA24EF4F67000950AD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48B513C224EF4F69000950AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48B513C324EF4F69000950AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48B513C524EF4F69000950AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB06954D6BC04DCC87A228A /* Pods-SeoulBike WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNVHULJDG5;
+				INFOPLIST_FILE = "SeoulBike WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hcmlr21.SeoulBike.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		48B513C624EF4F69000950AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43CFFFE81E355DF5BCDF668E /* Pods-SeoulBike WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNVHULJDG5;
+				INFOPLIST_FILE = "SeoulBike WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hcmlr21.SeoulBike.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		48B513C924EF4F69000950AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4FA6272D0259BED8FA9086 /* Pods-SeoulBike WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNVHULJDG5;
+				IBSC_MODULE = SeoulBike_WatchKit_Extension;
+				INFOPLIST_FILE = "SeoulBike WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = hcmlr21.SeoulBike.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		48B513CA24EF4F69000950AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE3A10705651CE294E93280 /* Pods-SeoulBike WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNVHULJDG5;
+				IBSC_MODULE = SeoulBike_WatchKit_Extension;
+				INFOPLIST_FILE = "SeoulBike WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = hcmlr21.SeoulBike.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		48B513CD24EF4F69000950AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A16B9F51072114006FE549 /* Pods-SeoulBike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNVHULJDG5;
+				INFOPLIST_FILE = SeoulBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hcmlr21.SeoulBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48B513CE24EF4F69000950AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C05AACE03C0127DF63C75D2 /* Pods-SeoulBike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNVHULJDG5;
+				INFOPLIST_FILE = SeoulBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hcmlr21.SeoulBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48B5138B24EF4F66000950AD /* Build configuration list for PBXProject "SeoulBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B513C224EF4F69000950AD /* Debug */,
+				48B513C324EF4F69000950AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B513C424EF4F69000950AD /* Build configuration list for PBXNativeTarget "SeoulBike WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B513C524EF4F69000950AD /* Debug */,
+				48B513C624EF4F69000950AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B513C824EF4F69000950AD /* Build configuration list for PBXNativeTarget "SeoulBike WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B513C924EF4F69000950AD /* Debug */,
+				48B513CA24EF4F69000950AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B513CC24EF4F69000950AD /* Build configuration list for PBXNativeTarget "SeoulBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B513CD24EF4F69000950AD /* Debug */,
+				48B513CE24EF4F69000950AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48B5138824EF4F66000950AD /* Project object */;
+}
